@@ -1,14 +1,6 @@
-![logo](https://repository-images.githubusercontent.com/302921248/58478900-0adf-11eb-8f0b-74be58a898ef)
+![logo](https://res.cloudinary.com/variant-gmbh/image/upload/v1682580864/bs/Logo_white_pxhgav.webp)
 
-# 11ty Sass Skeleton
-
-Featuring absolutely nothing beyond a base HTML5 template and the essential setup to watch and compile your Sass alongside 11ty.
-
-Includes minifiying and autoprefixing of styles **during development and on build** using [Lightning CSS](https://lightningcss.dev/). The v3 update ensures processing also occurs during development.
-
-If you have different preferred browser targets, be sure to modify the package `browserslist` or use a `.browserslistrc`.
-
-> **Note** > **As of v3**, Sass + LightningCSS processing now provided [via the standalone plugin](https://github.com/5t3ph/eleventy-plugin-sass-lightningcss) which you can use to add this functionality to an existing 11ty project!
+# Lautsprecher- & Gehäusebausätze
 
 <small>Created by [@5t3ph](https://front-end.social/@5t3ph)</small>
 
