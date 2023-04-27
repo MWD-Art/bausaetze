@@ -1,0 +1,43 @@
+footer {
+  padding-block: 2rem;
+  background-color: var(--dark);
+  color: var(--light2);
+
+  h5 {
+    color: var(--light);
+    position: relative;
+    margin-bottom: 1.5rem;
+
+    span {
+      display: inline-block;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: var(--primary);
+        inset: calc(100% + .25rem) 0 0 0;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    li:not(:last-child) {
+      margin-bottom: .5rem;
+    }
+  }
+
+  a {
+    color: var(--light2);
+    text-decoration: none;
+    font-weight: 700;
+  }
+}

@@ -7,11 +7,15 @@
 	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
 </head>
 <body>
-	<header>
-		<h1>{{ title }}</h1>
-	</header>
+	{% include 'components/hero.njk' %}
+	{% block content %}
 	<main>
 	{{ content | safe }}
 	</main>
+	{% endblock %}
+	{% include 'components/footer.njk' %}
+
+	<script src="/js/bundle.js"></script>
+
 </body>
 </html>

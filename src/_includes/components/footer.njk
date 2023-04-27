@@ -1,0 +1,48 @@
+<footer>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+      <div class="col">
+        <h5><span>Service Hotline</span></h5>
+        <p>
+          Bei Fragen oder Beratungswünschen stehen wir Ihnen Montag bis Freitag unter folgender Nummer zur Verfügung:
+        </p>
+        <p class="lead">
+          <a href="tel:+496421483909">06421 - 483 909</a> <br>
+          <small>09:00 - 17:00 Uhr</small>
+        </p>
+      </div>
+      <div class="col">
+        <h5><span>Shop Service</span></h5>
+        <ul>
+        {% for item in service %}
+          <li><a href="{{ item.url }}" title="{{ item.name }}">{{ item.name }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+      <div class="col">
+        <h5><span>Informationen</span></h5>
+        <ul>
+        {% for item in info %}
+          <li><a href="{{ item.url }}" title="{{ item.name }}">{{ item.name }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+      <div class="col">
+        <h5><span>Newsletter</span></h5>
+        <p>
+          Abonnieren Sie den kostenlosen Newsletter und verpassen Sie keine Neuigkeit oder Aktion mehr von variant HiFi.
+        </p>
+        <p>
+          <a href="https://variant-hifi.com/newsletter" class="btn btn-primary">zum Newsletter</a>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+      <hr class="my-4">
+        <p><small>* Alle Preise inkl. gesetzl. Mehrwertsteuer zzgl. Versandkosten und ggf. Nachnahmegebühren, wenn nicht anders beschrieben</small></p>
+        <p>&copy {% year %} - variant-hifi.de</p>
+      </div>
+    </div>
+  </div>
+</footer>

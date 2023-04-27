@@ -1,12 +1,51 @@
-$color: rebeccapurple;
+:root {
+  --primary: #C13436;
+  --secondary: #FFA552;
+  --dark: #0A0A0A;
+  --font: #7D7E75;
+  --light: #e5e3dc;
+  --light2: #f6f7f8;
+  --decent: rgba(246, 247, 248, 0.144);
+}
+
+$primary: #C13436;
+$secondary: #FFA552;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import './typography';
+
+html,
+body {
+  width: 100%;
+  overscroll-behavior: none;
+  min-height: 100%;
+  color: var(--font);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
 
 body {
-  font-family: system-ui;
-  background-color: #f9f9f9;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--light2);
 }
 
-h1 {
-  color: $color;
-  width: fit-content;
-  margin-inline: auto;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading {
+  font-family: 'causten', sans-serif;
+  font-weight: bold;
 }
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 250ms ease-out;
+  color: var(--dark);
+
+  &:hover {
+    color: var(--primary);
+  }
+}
+
+@import 'components/hero';
+@import 'components/footer';
