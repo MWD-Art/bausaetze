@@ -5,8 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ title }}</title>
 	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+	{% include "components/favicon.njk" %}
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navId">
+	{% include 'components/topbar.njk' %}
 	{% include 'components/hero.njk' %}
 	{% block content %}
 	<main>

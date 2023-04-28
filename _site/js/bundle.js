@@ -11864,6 +11864,10 @@
     requestAnimationFrame(raf);
   }
   requestAnimationFrame(raf);
+  var scrollSpy = new ScrollSpy(document.body, {
+    target: "#navbar-example",
+    smoothScroll: true
+  });
 })();
 /*! Bundled license information:
 

@@ -16,3 +16,8 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
+
+const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#navbar-example',
+  smoothScroll: true
+})

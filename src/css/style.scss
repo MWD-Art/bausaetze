@@ -19,7 +19,27 @@ body {
   width: 100%;
   overscroll-behavior: none;
   min-height: 100%;
-  color: var(--font);
+  color: var(--dark);
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
 
 body::-webkit-scrollbar {
@@ -47,5 +67,25 @@ a {
   }
 }
 
+section, .section {
+  padding-block: 5rem;
+  position: relative;
+  background-color: white;
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  &:nth-child(2n) {
+    background-color: var(--light2);
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+@import 'components/topbar';
 @import 'components/hero';
 @import 'components/footer';
