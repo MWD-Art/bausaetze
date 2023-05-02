@@ -2,6 +2,7 @@
   --primary: #C13436;
   --secondary: #FFA552;
   --dark: #0A0A0A;
+  --black: #0a0a0a;
   --font: #7D7E75;
   --light: #e5e3dc;
   --light2: #f6f7f8;
@@ -12,6 +13,7 @@ $primary: #C13436;
 $secondary: #FFA552;
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
 @import './typography';
 
 html,
@@ -81,11 +83,25 @@ section, .section {
 
 .sticky {
   position: sticky;
-  top: 0;
+  top: 5rem;
   width: 100%;
   z-index: 99;
+
+  &--nav {
+    top: 0;
+  }
+}
+
+.bg-dark {
+  background-color: var(--dark) !important;
+  color: var(--light2);
+}
+
+.bg-secondary {
+  color: var(--black);
 }
 
 @import 'components/topbar';
 @import 'components/hero';
+@import 'components/lists';
 @import 'components/footer';

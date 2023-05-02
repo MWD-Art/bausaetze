@@ -1,0 +1,17 @@
+.components {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    padding: .5rem 0;
+
+    &::before {
+      content: "\02C3";
+      color: var(--secondary);
+      margin-right: .5rem;
+      font-weight: bold;
+    }
+  }
+}

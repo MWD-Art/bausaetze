@@ -33,3 +33,28 @@
 .navbar-collapse {
   flex-grow: 0;
 }
+
+.navbar-brand {
+  color: var(--light2);
+
+  &:hover, &:focus, &:active {
+    color: var(--primary);
+  }
+}
+
+.nav-link {
+  color: var(--light2);
+
+  &:hover, &:focus {
+    color: var(--primary);
+  }
+
+  &.active {
+    color: var(--secondary);
+  }
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--secondary);
+}
