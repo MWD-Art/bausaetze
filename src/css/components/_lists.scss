@@ -5,13 +5,16 @@
   padding: 0;
 
   li {
-    padding: .5rem 0;
+    padding: .5rem 0 .5rem 1.25rem;
+    position: relative;
 
     &::before {
       content: "\02C3";
       color: var(--secondary);
-      margin-right: .5rem;
       font-weight: bold;
+      position: absolute;
+      left: 0;
+      top: .5rem;
     }
   }
 }
